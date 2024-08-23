@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+  
+                
+                <img src="Images/photo1.jpg" >
+            </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>I am a simple web Designer that is learning and is willing to learn more, I like designing web pages and is my hobby. 
+                        I am also very interested in Website and game development and you can find some of my games if you contact me.
+                    
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                      
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                    <li><span>UI/UX</span><br>Designing web/App interfaces</li>
+                    <li><span>WebSite</span><br>WebSite Development</li>
+                    <li><span>App development</span><br>Building Andriod/ios apps</li>
+                        </ul>
+                    </div>
+                    
+                    
+                  
+                </div>
+  
+            </div>
+        </div>
+     </div>
+    
+      <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-paper-plane"></i>roshanstan787@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9823043820</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/roshanstan787?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/roshan_shrestha_j?igsh=MTZrZTh1M2dyNnE1Zg%3D%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.reddit.com/u/SeniorPlan1037/s/ZKAGpoitOl"><i class="fa-brands fa-reddit"></i></a>
+                        
+                    </div>
+               
+            </div>
+        </div>
+        
+    </div>
+             <script>
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+                
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab")
+                }
+             </script>
+</body>
+</html>
