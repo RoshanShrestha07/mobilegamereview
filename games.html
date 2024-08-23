@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Simple Game Review Website</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+  <style>
+    body {
+      background: #080808;
+      color: #fff;
+      padding-top: 70px; 
+    }
+
+    #header {
+      background-size: cover;
+      background-position: center;
+      padding-top: 20px; 
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      width: 140px;
+    }
+
+    .nav-item {
+      margin: 0 10px;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-size: 18px;
+    }
+
+    .nav-link:hover {
+      color: #ff004f !important;
+    }
+
+    .game-section {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      padding: 20px;
+      background-color: #222;
+      border-radius: 8px;
+    }
+
+    .game-section .image img {
+      width: 150px; 
+      height: auto; 
+    }
+
+    .game-section .content {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .game-section h2 {
+      font-size: 1.8rem;
+      color: #de66b4;
+      margin-bottom: 10px;
+    }
+
+    .game-section p {
+      color: #e8efe9;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+      <img src="images/games.jpg" class="logo" alt="Logo">
+    </a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="games.html">Homepage</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="header" class="container text-center">
+    <h1>Games Review</h1>
+    <p>Some of the games and their reviews below are given, mostly mobile games are included in the list.</p>
+    <ul class="list-unstyled">
+      <li><a href="#coc" class="text-light">Clash Of Clans</a></li>
+      <li><a href="#codm" class="text-light">Call Of Duty Mobile</a></li>
+      <li><a href="#ff" class="text-light">Free Fire</a></li>
+      <li><a href="#genshin" class="text-light">Genshin Impact</a></li>
+      <li><a href="#ml" class="text-light">Mobile Legends Bang Bang</a></li>
+      <li><a href="#pubg" class="text-light">Players Unknown BattleGround</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="game-section" id="coc">
+      <div class="row">
+        <div class="col-md-4 image">
+          <img src="images/coc.jpg" alt="Clash Of Clans">
+        </div>
+        <div class="col-md-8 content">
+          <h2>Clash Of Clans</h2>
+          <p>Developer: Supercell</p>
+          <p>Genre: Strategy</p>
+          <p>Ratings:</p>
+          <p>Has a rating of 4.3/5.0 on Android</p>
+          <p>Has a rating of 4.7/5.0 on iOS</p>
+          <p>Pocket Gamer UK: Those looking for an opportunity to build a world, while destroying someone else's, will find Clash of Clans a very appealing package with surprisingly deep layers of strategy to dig through.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-section" id="codm">
+      <div class="row">
+        <div class="col-md-4 image">
+          <img src="images/codm.jpg" alt="Call Of Duty Mobile">
+        </div>
+        <div class="col-md-8 content">
+          <h2>Call Of Duty Mobile</h2>
+          <p>Developer: Activision</p>
+          <p>Genre: First-Person Shooter</p>
+          <p>Ratings:</p>
+          <p>Has a rating of 4.3/5.0 on Android</p>
+          <p>Has a rating of 7.7/10 on IGN</p>
+          <p>Kyle Hilliard: Call of Duty: Mobile plays well but not great, with a substantial multiplayer package that includes an exciting, condensed take on Blackout’s battle royale.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-section" id="ff">
+      <div class="row">
+        <div class="col-md-4 image">
+          <img src="images/ff.jpg" alt="Free Fire">
+        </div>
+        <div class="col-md-8 content">
+          <h2>Free Fire</h2>
+          <p>Developer: Garena</p>
+          <p>Genre: Battle Royale</p>
+          <p>Ratings:</p>
+          <p>Has a rating of 4.2/5.0 on Android</p>
+          <p>Has a rating of 3.8/5.0 on iOS</p>
+          <p>hodernet19: I liked this game very much. Definitely this game may have low graphics and improper controls, but it's a good option for low-end devices.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-section" id="genshin">
+      <div class="row">
+        <div class="col-md-4 image">
+          <img src="images/genshin.jpg" alt="Genshin Impact">
+        </div>
+        <div class="col-md-8 content">
+          <h2>Genshin Impact</h2>
+          <p>Developer: HoYoverse</p>
+          <p>Genre: Action role-playing</p>
+          <p>Ratings:</p>
+          <p>Has a rating of 4.8/5.0 on Android</p>
+          <p>Has a rating of 9/10 on IGN</p>
+          <p>Travis Northup: Genshin Impact draws inspiration from Zelda, but it stands on its own with a beautiful world and deep RPG systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-section" id="ml">
+      <div class="row">
+        <div class="col-md-4 image">
+          <img src="images/ml.jpg" alt="Mobile Legends Bang Bang">
+        </div>
+        <div class="col-md-8 content">
+          <h2>Mobile Legends Bang Bang</h2>
+          <p>Developer: Moonton Elex Technology</p>
+          <p>Genre: Multiplayer Online Battle Arena</p>
+          <p>Ratings:</p>
+          <p>Has a rating of 4.1/5.0 on Android</p>
+          <p>Has a rating of 4.1/5.0 on TapTap</p>
+          <p>Pppkkk: Matchmaking issues are frustrating, and the game has seen better days. Used to be good, but now it needs improvements.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-section" id="pubg">
+      <div class="row">
+        <div class="col-md-4 image">
+          <img src="images/pubg.jpg" alt="PUBG">
+        </div>
+        <div class="col-md-8 content">
+          <h2>Players Unknown BattleGround</h2>
+          <p>Developer: Lightspeed and Quantum studio</p>
+          <p>Genre: Battle Royale</p>
+          <p>Ratings:</p>
+          <p>Has a rating of 4.3/5.0 on Android</p>
+          <p>Has a rating of 4.3/5.0 on iOS</p>
+          <p>David Jagneaux: PUBG Mobile offers a full PUBG experience on mobile devices with impressive performance and features.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    <a href="table.html" class="review">Click for Reviews</a>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
